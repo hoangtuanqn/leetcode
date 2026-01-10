@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace _300_code_exercises
-{   
+{
     /*
         Solution:
             Sử dụng dictionary
      */
-    internal class lesson1_two_sum
+    internal class _001_TwoSum
     {
         public int[] TwoSum(int[] nums, int target)
         {
@@ -18,14 +18,15 @@ namespace _300_code_exercises
             for (int i = 0; i < nums.Length; i++)
             {
                 var subtraction = target - nums[i];
-                if (map.TryGetValue(subtraction, out var result))
+                if (map.ContainsKey(subtraction))
                 {
-                    return [result, i];
+                    return [map[subtraction], i];
                 }
-                if (!map.ContainsKey(nums[i]))
+                else
                 {
-                    map.Add(nums[i], i);
+                    map[nums[i]] = i;
                 }
+
             }
             return [];
         }
