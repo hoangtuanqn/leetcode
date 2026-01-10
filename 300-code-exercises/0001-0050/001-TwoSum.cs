@@ -9,6 +9,7 @@ namespace _300_code_exercises
     /*
         Solution:
             Sử dụng dictionary
+            Video: https://youtu.be/SLBYeRsKu9A
      */
     internal class _001_TwoSum
     {
@@ -20,7 +21,7 @@ namespace _300_code_exercises
                 var subtraction = target - nums[i];
                 if (map.ContainsKey(subtraction))
                 {
-                    return [map[subtraction], i];
+                    return [map[2], i];
                 }
                 else
                 {
