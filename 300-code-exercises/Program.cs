@@ -1,9 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using _300_code_exercises;
+using _300_code_exercises._0001_0050;
 
-var ok = new _001_TwoSum();
-var data = ok.TwoSum([1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 7, 1, 1, 1, 1, 1], 11);
-foreach(var item in data)
-{
-    Console.WriteLine(item);
-}
+var ok = new _020_ValidParentheses();
+var data = ok.IsValid("({{{{}}}))");
+Console.WriteLine($"Result: {data}");
