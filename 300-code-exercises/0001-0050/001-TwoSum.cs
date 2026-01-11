@@ -21,7 +21,7 @@ namespace _300_code_exercises
                 var subtraction = target - nums[i];
                 if (map.ContainsKey(subtraction))
                 {
-                    return [map[2], i];
+                    return [map[i], i];
                 }
                 else
                 {
