@@ -42,6 +42,8 @@
     const int MOD = 1e9 + 7;
 
     // ====== SOLUTION
+
+    // có solution HD: 115_distinct_subsequences.md
     int numDistinct(string s, string t) {
         int n = s.size(), m = t.size();
         vector<vector<ll>> dp(n + 1, vector<ll>(m + 1, 0));
